@@ -1,0 +1,21 @@
+.casegraph_data{
+    padding: 40px 150px;
+}
+
+@media (max-width:992px) {
+    .casegraph_data{
+        padding: 30px 100px;
+    }
+}
+
+@media (max-width:768px) {
+    .casegraph_data{
+        padding: 20px 70px;
+    }
+}
+
+@media (max-width:600px) {
+    .casegraph_data{
+        padding: 8px;
+    }
+}

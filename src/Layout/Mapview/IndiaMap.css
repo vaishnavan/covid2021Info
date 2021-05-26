@@ -1,0 +1,90 @@
+.card-table{
+    width: 300px;
+    height: 200px;
+    text-align: center;
+    padding: 5px;
+}
+.indiagraph_main{
+    margin: 30px 0;
+}
+table th,td{
+    padding: 0 3px;
+}
+
+
+.svg-map{
+    width: 100%;
+    height: 850px;
+}
+  
+
+@media (max-width:768px) {
+    .card-table{
+        width: 0;
+        height: 0;
+        text-align: center;
+    }
+    .svg-map{
+        width: 100%;
+        height: 650px;
+    }
+}
+
+
+@media (max-width:600px) {
+    .card-table{
+        width: 0;
+        height: 0;
+        text-align: center;
+        padding: 0px;
+    }
+    .svg-map{
+        width: 100%;
+        height: 350px;
+    }
+    .myCard_data_content{
+        font-size: 1.2vh;
+    }
+    .table_content{
+        font-size: 1vh;
+    }
+    .square{
+        position: relative;
+        padding: 1px;
+    }
+}
+  .svg-map__location {
+    fill: #363636;
+  }
+  
+  .svg-map__location:link {
+    fill: #f07070;
+  }
+  .svg-map__location:visited {
+    fill: #d4462dfd;
+  }
+  
+  .svg-map__location:hover {
+    fill: #f07070;
+  }
+  
+  .svg-map__location:active {
+    fill: #646464;
+  }
+  .svg-map__location:focus {
+    fill: #646464;
+  }
+  
+  .square{
+    position: relative;
+    padding: 10px;
+  }
+  
+  
+  
+  .content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  

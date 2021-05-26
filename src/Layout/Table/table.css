@@ -47,4 +47,14 @@
     .covid_table_search{
         margin:20px 0;
     }
+    .covid_table_main{
+        padding: 10px;
+    }
+    .covid_table th{
+        padding: 3px;
+        background-color: gray;
+    }
+    .covid_table td{
+        padding: 3px;
+    }
 }

@@ -14,6 +14,7 @@ class Table extends Component {
     handleCahnge = (e) => {
         this.setState({
             search:e.target.value
+            
         })
     }
     
