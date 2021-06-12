@@ -7,15 +7,15 @@
     text-align: center;
 }
 .header_covid_heading{
-    background-color: rgb(59, 59, 59);
+    background-color: #1e1e30 !important;
     padding: 10px;
-    color: white;
+    color: #bdbdbd;
 }
 .header_covid_heading hr{
     width: 300px;
     margin: 5px auto;
     height: 3px;
-    background-color: white;
+    background-color: #bdbdbd;
     border-radius: 3px;
 
 }

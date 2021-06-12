@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Line, Bar } from 'react-chartjs-2';
+import { Line } from 'react-chartjs-2';
 import './caseChart.css';
 
 export class CaseChart extends Component {
@@ -11,11 +11,11 @@ export class CaseChart extends Component {
             labels: mySortData.slice(0,5).map((data) => data.region),
             datasets: [
                 {
-                    label: 'Top HighCase Alert Staes',
+                    label: 'Top HighCase Alert States',
                     fill: false,
                     lineTension: 0.1,
-                    backgroundColor: 'rgba(75,192,192,0.4)',
-                    borderColor: 'rgba(75,192,192,1)',
+                    backgroundColor: 'blue',
+                    borderColor: 'blue',
                     borderCapStyle: 'butt',
                     borderDash: [],
                     borderDashOffset: 0.0,
@@ -41,8 +41,8 @@ export class CaseChart extends Component {
                     label: 'Case Recovered Covid19',
                     fill: false,
                     lineTension: 0.1,
-                    backgroundColor: 'orange',
-                    borderColor: 'orange',
+                    backgroundColor: 'green',
+                    borderColor: 'green',
                     borderCapStyle: 'butt',
                     borderDash: [],
                     borderDashOffset: 0.0,
@@ -90,14 +90,14 @@ export class CaseChart extends Component {
 
         return (
             <div>
-                <div className="casegraph_data">
+                <div data-aos="fade-up" className="casegraph_data">
                     <Line className="casegraph_inner" data={data} />
                 </div>      
-                <div className="casegraph_data">
+                <div data-aos="fade-up" className="casegraph_data">
                     <Line className="casegraph_inner" data={data1} />
                 </div>   
-                <div className="casegraph_data">
-                    <Bar className="casegraph_inner" data={data2} />
+                <div data-aos="fade-up" className="casegraph_data">
+                    <Line className="casegraph_inner" data={data2} />
                 </div>   
                   
             </div>

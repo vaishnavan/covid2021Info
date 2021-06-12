@@ -1,0 +1,27 @@
+.vary_with_days{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+.vary_with_days button{
+    padding: 7px 50px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 255, 0.524);
+    background-color: #1e1e30;
+    color: #bdbdbd;
+}
+.vary_with_days .active{
+    background-color: #161625 !important;
+}
+
+@media (max-width:600px) {
+    .vary_with_days button{
+        padding: 7px 20px;
+    }
+}
+
+@media (max-width:450px) {
+    .vary_with_days button{
+        padding: 7px 10px;
+    }
+}

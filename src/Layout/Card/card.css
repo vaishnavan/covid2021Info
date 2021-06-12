@@ -1,19 +1,75 @@
 .card_display{
     /* display: inline-block; */
-    border: 1px solid rgb(219, 219, 219);
     padding: 10px;
-    width: 200px;
-    height: 150px;
     text-align: center;
     margin: 20px 10px;
     border-radius: 3px;
-    background-color: rgb(44, 44, 44);
+    background-color: #37374eac !important;
+    box-shadow: "0 0 10px rgba(0,0,0,0.5)"
+}
+.card_display .card_head_red{
+    color: red;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
     transition: 0.5s;
 }
-.card_display:hover{
-    border: 1px solid rgb(145, 218, 238);
+.card_display:hover .card_head_red{
     cursor: pointer;
     transform: scale(1.2);
+    background-color: rgba(189, 73, 73, 0.158);
+    width: 200px;
+    height: 150px;
+    border: none;
+    padding: 10px;
+}
+.card_display .card_head_blue{
+    color: blue;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    transition: 0.5s;
+}
+.card_display:hover .card_head_blue{
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: rgba(37, 135, 255, 0.103);
+    width: 200px;
+    height: 150px;
+    border: none;
+    padding: 10px;
+}
+.card_display .card_head_green{
+    color: green;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    transition: 0.5s;
+}
+.card_display:hover .card_head_green{
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color:rgba(0, 128, 0, 0.2);
+    width: 200px;
+    height: 150px;
+    border: none;
+    padding: 10px;
+}
+.card_display .card_head_gray{
+    color: gray;
+    width: 200px;
+    height: 150px;
+    padding: 10px;
+    transition: 0.5s;
+}
+.card_display:hover .card_head_gray{
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color:rgba(131, 133, 131, 0.2);
+    width: 200px;
+    height: 150px;
+    border: none;
+    padding: 10px;
 }
 .newly_active{
     padding: 10px;
@@ -25,7 +81,7 @@
     font-weight: bold;
 }
 .card_display_main{
-    padding: 50px;
+    padding:20px 250px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -33,6 +89,16 @@
 }
 .card_head h3{
     margin-top: 30px;
+}
+
+@media (max-width:768px) {
+    .card_display_main{
+        padding:20px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
 }
 
 

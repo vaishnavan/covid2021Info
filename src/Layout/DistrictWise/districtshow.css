@@ -1,0 +1,185 @@
+.myDistrictData_main{
+    padding:50px 210px;
+}
+.myDistrictData_heading h2{
+    text-align: center;
+    margin: 30px auto;
+    color: red;
+}
+.myDistrictData_select{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.myDistrictData_select select{
+    padding: 10px;
+    outline: none;
+    background-color: #1e1e30;
+    color: white;
+}
+
+.districtwise_card{
+    border: 1px solid blue;
+}
+.districtwise_card_main{
+    margin: 0;
+}
+.districtwise_card_main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    text-align: center;
+}
+.red_alert_case{
+    padding: 30px;
+    height: 180px;
+    border: 1px solid red;
+    background-color: rgb(104, 81, 81);
+    border-radius: 5px;
+}
+.orange_alert_case{
+    padding: 30px;
+    height: 180px;
+    border: 1px solid orange;
+    background-color: rgb(145, 123, 83);
+    border-radius: 5px;
+    
+}
+.normal_alert_case{
+    padding: 30px;
+    height: 180px;
+    border: 1px solid green;
+    background-color: rgb(78, 107, 78);
+    border-radius: 5px;
+}
+
+
+.districwise_count_active{
+    color: rgb(81, 81, 129);
+    font-weight: bolder;
+}
+.districwise_count_confirm{
+    color: rgb(175, 75, 75);
+}
+.districwise_count_recover{
+    color: rgb(93, 179, 93);
+}
+.districwise_count_death{
+    color: rgb(209, 194, 194);
+}
+
+/* data content */
+
+.districwise_stateDetail span{
+    font-size: 22px;
+}
+.districwise_caseDetail{
+    margin: 20px 0;
+}
+.districwise_caseDetail span{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* data content */
+.myDistrictData_select select option{
+    padding: 10px;
+    margin: 10px;
+}
+.districtwise_card_Data{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.cases_indicator{
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.casesWise_indi{
+    display: flex;
+    align-items: center;
+}
+.zonewise_indicator{
+    margin: 20px 0;
+}
+
+.cases_indicator .circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 3px;
+}
+
+
+@media (max-width:992px) {
+    .myDistrictData_main{
+        padding: 30px 150px;
+    }
+    .districtwise_card_main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+    
+}
+
+@media (max-width:768px) {
+    .myDistrictData_main{
+        padding: 10px;
+    }
+    .districtwise_card_main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+    }
+}
+
+@media (max-width:600px) {
+    .districtwise_card_main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+    .red_alert_case,.orange_alert_case,.normal_alert_case{
+        padding: 3px;
+        height: 180px;
+    }
+    .districwise_stateDetail span{
+        font-size: 16px;
+    }
+    .districwise_caseDetail{
+        margin: 20px 0;
+    }
+    .districwise_caseDetail span{
+        font-size: 16px;
+        line-height: 30px;
+    }
+    .cases_indicator{
+        font-size: 1.2vh;
+    }
+    .cases_indicator .circle{
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        margin: 0 3px;
+    }
+    .cases_indicator{
+        display: flex;
+        align-items: center;
+        margin: 0 2px;
+    }
+    
+}
+
+@media (max-width:320px) {
+    .myDistrictData_select select{
+        width: 200px;
+    }
+    .myDistrictData_select option{
+        width: 200px;
+    }
+}

@@ -39,7 +39,7 @@ function IndiaMap(props) {
   }
 
   return (
-    <div className="indiagraph_main">
+    <div data-aos="zoom-in" className="indiagraph_main">
       <div
          className={show ? "square":''}
         style={{
@@ -59,15 +59,11 @@ function IndiaMap(props) {
             <div
                 className="table_content"
               style={{
-                backgroundColor: "black",
+                backgroundColor: "#1e1e30",
                 padding: "2%",
               }}
             >
               <table className="card-table text-left">
-                <tr>
-                  <th>Last Update Time</th>
-                  <td>{detail.lastupdatedtime}</td>
-                </tr>
                 <tr>
                   <th>Total Active</th>
                   <td>{numeral(detail.active).format(",")}</td>
